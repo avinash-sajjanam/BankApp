@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Application Login</title>
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="resources/js/home.js"></script>
+<link href="resources/css/styleHome.css" rel="stylesheet" />
+</head>
+<body>
+	<header id=header>
+		<h1>Banking Application</h1>
+	</header>
+	<div id="container">
+		<div class="tabbox">
+			<a href="" id="login" class="tab select">Login</a> <a href="#"
+				id="register" class="tab register">Register</a>
+		</div>
+		<div id="home-form">
+			<div id="login">
+				<!-- 				<h1>LogIn</h1> -->
+				<form action="logincheck" method="post" id="loginform">
+					<input type="email" placeholder="Username" name="uname" /><br>
+					<br> <input type="password" placeholder="Password" name="pass" /><br>
+					<br> <input type="submit" value="Login" class="button" /><br>
+					<br>
+				</form>
+			</div>
+			<!--/#login.form-action-->
+			<div id="register">
+				<!-- 				<h1>Register</h1> -->
+				<form action="register" method="post" id="registerform">
+					<input type="text" placeholder="First Name" name="fname"/><br>
+					<br>
+					<input type="text" placeholder="Last Name" name="lname"/><br>
+					<br>
+					<input type="email" placeholder="Username" name="uname" /><br>
+					<br> <input type="password" placeholder="Password" name="pass" /><br>
+					<br> <input type="submit" value="Register" class="button" /><br>
+					<br>
+				</form>
+			</div>
+			<!--/#register.form-action-->
+		</div>
+	</div>
+</body>
+</html>
+
+

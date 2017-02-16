@@ -1,0 +1,19 @@
+body{
+	background-color: #dfe1e1;
+}
+#header-Wrapper{
+	width:50%
+	hieht:80px;
+}
+.logo{
+	padding:10px;
+	margin-right:10px;
+	font-size:35px;
+	font-family:monospace;
+}
+.tagline{
+	font-size:15px;
+	margin-top:50px;
+	margin-left:-123px;
+	font-family:monospace;
+}

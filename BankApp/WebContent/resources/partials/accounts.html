@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<script src="java" content="text/html; charset=ISO-8859-1;ISO-8859-1"></script>
+<script src="http://www.springframework.org/tags;spring"></script>
+<script src="http://www.springframework.org/tags/form"></script>
+<script src="http://java.sun.com/jsp/jstl/core"></script>
+<title>Accounts</title>
+</head>
+<body>
+	<br>
+	<br>
+	<h3>This is accounts page</h3>
+	<form action="deposit" method="post">
+		<div ng-controller="AccountCtrl">
+			<ul class="list-unstyled">
+				<li class="user" ng-repeat="user in user"
+					ng-repeat="account in account">
+					<div class="user details">
+						First Name : <input type="text" name="firstname" value="{{user.firstname}}"><br> 
+						Last Name :<input type="text" name="lastname" value="{{user.lastname}}"><br> 
+						Account Number : <input type="text" name="accountnumber" value="{{user.accountnumber}}"><br>
+						Checking Account : <input type="text" name="checkingaccount" value="{{user.account.checking}}"><br>
+					    Saving Account :<input type="text" name="savingaccount" value="{{user.account.saving}}"><br>
+						Account Type : <select name="accounttype" id="accounttype">
+									<option value="Checking">Checking</option>
+									<option value="Saving">Saving</option>
+										</select><br>
+					    Deposit :<input type="text" name="depositamt" /><br>
+		 				<input type="submit" value="Deposit">
+					</div>
+				</li>
+			</ul>
+		</div>
+	</form>
+
+</body>
+</html>
